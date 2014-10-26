@@ -33,35 +33,38 @@ var handleTagSlider = function(){
 	});
 };	
 
-var handleCrowdOp = function(){
-	$(".btn-addCategory").on("click", function(e){
+var handleBreandOp = function(){
+	$(".brand-sub-list li a").on("click", function(e){
 		// 添加
-		var ev = e || window.event;
-		var startX = ev.screenX;
-		var startY = ev.screenY - 54;
-		$("#fly-tag").css("top", startY) ;
-		$("#fly-tag").css("left", startX) ;
-		$("#fly-tag").show();
+		if(!$(this).hasClass("selected")){
+			var ev = e || window.event;
+			var startX = ev.screenX;
+			var startY = ev.screenY - 54;
+			$("#fly-tag").css("top", startY) ;
+			$("#fly-tag").css("left", startX) ;
+			$("#fly-tag").show();
 
-		var targetTop = $(window).height() - 62;
-		var targetLeft = $(window).width() * 0.74;
-		$("#fly-tag").css("top", targetTop);
-		$("#fly-tag").css("left", targetLeft);
-		setTimeout(function(){
-			$("#fly-tag").hide();
-		}, 500);
+				var targetTop = $(window).height() - 62;
+				var targetLeft = $(window).width() * 0.74;
+				$("#fly-tag").css("top", targetTop);
+				$("#fly-tag").css("left", targetLeft);
+			setTimeout(function(){
+				$("#fly-tag").hide();
+			}, 500);
 			
+		}
 	});
 				
 };
-var TargetCrowd = function () {
+
+var BrandChoosing = function () {
 	"use strict";
     return {
         //main function
         init: function () {
         	adjustWidth();
         	handleTagSlider();
-        	handleCrowdOp();
+        	handleBreandOp();
         }
     };
 }();
