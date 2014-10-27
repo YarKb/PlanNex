@@ -22,6 +22,8 @@
 	<!-- ================== BEGIN CUSOMIZE CSS STYLE ================== -->
     <link href="assets/css/customize.css" rel="stylesheet" />
     <link href="assets/css/extra.css" rel="stylesheet" />
+    <link href="assets/css/map.css" rel="stylesheet" />
+    <link href="assets/css/media-attention.css" rel="stylesheet" />
 	<!-- ================== END CUSOMIZE CSS STYLE ================== -->
 	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
 	<!-- <link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" /> -->
@@ -152,7 +154,7 @@
 						<div class="panel-heading">
 							<div class="panel-heading-btn">
                                 <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="download-toggle"><i class="fa fa-download"></i></a>
-                                <ul class="btn-download">
+                                <ul class="btn-download hidden">
                                     <li data-click="download-img">保存当前图片</li>
                                     <li data-click="download-pdf">保存完整PDF</li>
                                 </ul>
@@ -200,7 +202,7 @@
 						<div class="panel-heading">
 							<div class="panel-heading-btn">
                                 <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="download-toggle"><i class="fa fa-download"></i></a>
-                                <ul class="btn-download">
+                                <ul class="btn-download hidden">
                                     <li data-click="download-img">保存当前图片</li>
                                     <li data-click="download-pdf">保存完整PDF</li>
                                 </ul>
@@ -213,19 +215,22 @@
 							<!--<div class="row">-->
                             <div>
 								<div class="col-md-3 height-sm " id="donut-chart-1" data-chart></div>
-								<div class="col-md-6 height-sm " id="donut-chart-2" data-chart></div>
+								<div class="col-md-6 height-sm text-center" id="donut-chart-2" data-chart></div>
 								<div class="col-md-3 height-sm " id="donut-chart-3" data-chart></div>
 							</div>
 						</div>
 					</div>
 					
 				</div>
+				<script type="text/javascript">
+				
+				</script>
 				<div class="col-md-6">
 					<div class="panel panel-inverse bgcolor">
 						<div class="panel-heading">
 							<div class="panel-heading-btn">
                                 <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="download-toggle"><i class="fa fa-download"></i></a>
-                                <ul class="btn-download">
+                                <ul class="btn-download hidden">
                                     <li data-click="download-img">保存当前图片</li>
                                     <li data-click="download-pdf">保存完整PDF</li>
                                 </ul>
@@ -235,8 +240,78 @@
 							<h4 class="panel-title">曝光地域分布</h4>
 						</div>
 						<div class="panel-body">
-							<div id="world-map" class="height-sm col-md-10" data-chart></div>
-							<div id="world-map-legend" class="height-sm col-md-2"></div>
+							<div id="world-map" class="height-sm col-md-9" style="padding:0px;" data-chart></div>
+							<div class="height-sm col-md-3" style="padding:0px;">
+								<div class="cTabs">
+									<a id="tab-prov">省份</a>
+									<a id="tab-city">城市</a>
+								</div>
+								<ul id="world-map-legend">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<!-- end col-4 -->
+				<div class="row">
+				<!-- begin col-4 -->
+				<div class="col-md-6 ">
+					
+					
+					<div class="panel panel-inverse bgcolor withSubTitle">
+						<div class="panel-heading">
+							<div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="download-toggle"><i class="fa fa-download"></i></a>
+                                <ul class="btn-download hidden">
+                                    <li data-click="download-img">保存当前图片</li>
+                                    <li data-click="download-pdf">保存完整PDF</li>
+                                </ul>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-pencil"></i></a>
+								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+							</div>
+							<h4 class="panel-title"><span class="icon"></span>媒体关注度</h4>
+							<div class="search-conditions"><label>时间范围</label><span>1-3月</span><label>地域</label><span>江苏－南京</span></div>
+						</div>
+						<div class="panel-body">
+							<div id="media-attention-graph" class="sTab">
+							</div>
+							<div id="media-attention-swich" class="tabSwich">
+								<a></a>
+								<a class="active"></a>
+								<a></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<script type="text/javascript">
+				
+				</script>
+				<div class="col-md-6">
+					<div class="panel panel-inverse bgcolor">
+						<div class="panel-heading">
+							<div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="download-toggle"><i class="fa fa-download"></i></a>
+                                <ul class="btn-download hidden">
+                                    <li data-click="download-img">保存当前图片</li>
+                                    <li data-click="download-pdf">保存完整PDF</li>
+                                </ul>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-pencil"></i></a>
+								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+							</div>
+							<h4 class="panel-title">曝光地域分布</h4>
+						</div>
+						<div class="panel-body">
+							<div id="world-map" class="height-sm col-md-9" style="padding:0px;" data-chart></div>
+							<div class="height-sm col-md-3" style="padding:0px;">
+								<div class="cTabs">
+									<a id="tab-prov">省份</a>
+									<a id="tab-city">城市</a>
+								</div>
+								<ul id="world-map-legend">
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -269,9 +344,11 @@
 	<script src="assets/plugins/highcharts/highcharts.src.js"></script>
 	<script src="assets/plugins/highcharts/highcharts-more.js"></script>
 	<script src="assets/plugins/highcharts/modules/solid-gauge.src.js"></script>
- 	<script src="assets/plugins/highMaps/modules/map.js"></script>
+ 	<script src="assets/plugins/highMaps/modules/map.src.js"></script>
 	<script src="assets/plugins/highcharts/modules/exporting.js"></script>
 	<script src="assets/plugins/highMaps/map-cn-all.js"></script>
+	<script src="assets/js/map.js"></script>
+	<script src="assets/js/media-attention.js"></script>
 	<!-- // <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script> -->
 	<script src="assets/js/dashboard.js"></script>
     <script src="assets/js/apps.js"></script>
@@ -282,5 +359,7 @@
 			Dashboard.init();
 		});
 	</script>
+	<style type="text/css">
+	</style>
 </body>
-</html>
+</html

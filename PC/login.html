@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>PlaNex | Dashboard</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="../assets/css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/theme/night.css" media="" />
+
+    <link href="../assets/css/response.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	<!-- ================== BEGIN CUSOMIZE CSS STYLE ================== -->
+	<!-- ================== END CUSOMIZE CSS STYLE ================== -->
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<!-- <link href="../assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" /> -->
+	<!-- <link href="../assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" /> -->
+    <!-- <link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/fontello/css/animation.css" media="" />
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/fontello/css/fontello.css" media="" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+</head>
+<body>
+
+
+    <!--begin page content-->
+    <div class="top"><img src="./../assets/img/logo/logo-mini.PNG" alt=""/></div>
+    <div class="content">
+        <!--<a href="#" class="black font18 fr mr80 btn-tab">申请账号<img src="./../assets/img/icons/arrow-right.png" alt=""/></a>-->
+        <a href="apply_step_1.html" class="black font18 fr mr50 btn-tab">申请账号<span> </span></a>
+        <div class="login-content mt78">
+            <div class="color-line"><span></span><span></span><span></span></div>
+            <div class="input-content center">
+                <h2 class="font26 center pt50 black">欢迎登录</h2>
+                <form class="input-bar mt40">
+                    <div class="txt icon-txt">
+                        <span class="txt-username"><i class="icon-user"></i></span>
+                        <input type="text"  placeholder="请输入用户名" onclick="inputbar(this)">
+                    </div>
+                    <div class="txt icon-txt">
+                        <span class="txt-password"><i class="icon-password"></i></span>
+                        <input type="password"  placeholder="请输入密码">
+                    </div>
+                    <a href="#" class="black font14 mt20 fr">忘记密码？</a>
+                </form>
+                <!--<input type="button" class="btn-big btn-impor ml70 mt20" value="登录"/>-->
+                <a href="#" class="btn-large btn-impor ml80" value="">登录</a>
+            </div>
+
+        </div>
+    </div>
+	<!--end page content-->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/jquery-1.8.2/jquery-1.8.2.min.js"></script>
+	<script src="../assets/plugins/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
+	<script src="../assets/plugins/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="../assets/crossbrowserjs/respond.min.js"></script>
+		<script src="../assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- // <script src="../assets/plugins/jquery-cookie/jquery.cookie.js"></script> -->
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<!--<script src="../assets/plugins/gritter/js/jquery.gritter.js"></script> -->
+	
+	<script src="../assets/plugins/highcharts/highcharts.src.js"></script>
+	<script src="../assets/plugins/highcharts/highcharts-more.js"></script>
+	<script src="../assets/plugins/highcharts/modules/solid-gauge.src.js"></script>
+	<!-- // <script src="../assets/plugins/sparkline/jquery.sparkline.js"></script> -->
+	<script src="../assets/plugins/highMaps//modules/map.js"></script>
+	<!-- // <script src="http://code.highcharts.com/maps/modules/exporting.js"></script> -->
+	<script src="../assets/plugins/highMaps/map-cn-all.js"></script>
+	<!-- // <script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script> -->
+	<script src="../assets/js/dashboard.js"></script>
+    <script src="../assets/js/apps.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	<script>
+		$(document).ready(function() {
+			App.init();
+			Dashboard.init();
+		});
+	</script>
+</body>
+</html>

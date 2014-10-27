@@ -5535,7 +5535,7 @@ ul.tagit.inverse li.tagit-choice .tagit-close:focus .ui-icon-close:before,ul.tag
 }
 
 .bootstrap-calendar .calendar .event .popover a {
-    color: #428bca
+    color: #fff
 }
 
 .bootstrap-calendar .calendar .event .popover a:focus,.bootstrap-calendar .calendar .event .popover a:hover {

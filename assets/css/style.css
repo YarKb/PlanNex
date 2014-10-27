@@ -4,7 +4,7 @@ body {
     background-attachment:fixed;
     font-size: 14px;
     font-family:  Helvetica ,'Microsoft Yahei', 'Open Sans', "Helvetica Neue",Arial,sans-serif;
-    color: #707478;
+    color: #9a9799;
     font-weight: 100;
 }
 h1, h2, h3, h4, h5, h6{
@@ -29,7 +29,6 @@ a:focus {
 label {
     color: #242a30;
 }
-
 
 /* -------------------------------
    2.0 Page Structure Settings
@@ -1306,10 +1305,15 @@ legend {
 .panel-title a {
     display: block;
 }
+.panel-title span.icon{margin-right:20px;top: 3px;
+position: relative;width:20px;height:20px;background: url(../img/icons/headIcon0.png);display:inline-block;}
 .panel-title > a:hover,
 .panel-title > a:focus {
     text-decoration: none;
 }
+.search-conditions {font-size:12px;margin-left:43px;margin-top:10px;}
+.search-conditions label{color:#FFF;}
+.search-conditions span{color:#FFF;margin-left:13px;margin-right:28px;}
 
 
 /* 3.14 Component - Button */
@@ -1592,7 +1596,7 @@ legend {
     border-top: 1px solid #eee;
 }
 .slimScrollDiv{
-    background-color: rgba(111,95,92,0.4);
+    /*background-color: rgba(111,95,92,0.4);*/
 }
 .panel-heading-btn {
     float: right;
@@ -1692,6 +1696,9 @@ legend {
 }
 .panel-body {
     padding: 15px;
+}
+.withSubTitle .panel-body{
+    height:298px;
 }
 .panel-body.no-border {
     border: none !important;
@@ -1794,7 +1801,11 @@ legend {
     bottom: 0;
 }
 
-
+/* 3.16.1 Component - Panel - Panel Swich */
+.sTab{width:calc(100% - 40px);float:left;height:100%;}
+.tabSwich {float:left;width:10px;margin-left:10px;height:100%;padding-top:50px;}
+.tabSwich a{margin-top:10px;width:100%;height:10px;background: #9a9799;border-radius: 10px;display: inline-block;;}
+.tabSwich a.active{background: #FFF;}
 /* 3.17 Component - Panel - Panel loading */
 
 .panel.panel-loading .panel-body {
@@ -2483,7 +2494,8 @@ a.text-inverse:focus {
 .bg-aqua-lighter { background: #6dc5de !important; }
 
 .bg-purple { background: #727cb6 !important; }
-.bg-purple-darker { background: #45454e !important; }
+/*.bg-purple-darker { background: #45454e !important; }*/
+.bg-purple-darker { background: rgba(61,67,81,.95) !important; }
 .bg-purple-lighter { background: #8e96c5 !important; }
 
 
@@ -2556,6 +2568,7 @@ a.text-inverse:focus {
 
 .row .ui-sortable {
     min-height: 50px;
+    display: block;
 }
 .theme-panel .ui-sortable {
     min-height: 0px;
@@ -4708,11 +4721,11 @@ ul.tagit.inverse li.tagit-choice .tagit-close:focus .ui-icon-close:before {
     margin: 0 auto;
 }
 .bootstrap-calendar .calendar .event .popover a {
-    color: #428bca;
+    color: #fff;
 }
 .bootstrap-calendar .calendar .event .popover a:hover, 
 .bootstrap-calendar .calendar .event .popover a:focus {
-    color: #2a6496;
+    color: #fff;
     text-decoration: underline;
 }
 .bootstrap-calendar .calendar .event,

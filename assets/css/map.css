@@ -1,0 +1,19 @@
+/*
+map css
+*/
+
+.cTabs{
+	border-bottom:1px solid #5f5e67;height:25px;padding-left:10px;
+}
+
+.cTabs a{color:#9a9799;font-size:14px;line-height:25px;border-bottom:1px solid #5f5e67;text-align: center;height:25px;width:60px;float:left;text-decoration:none;}
+.cTabs a.active{color:White;border:1px solid #5f5e67;border-bottom:0px;background:#4a454c;}
+
+
+#world-map-legend{margin-top:5px;height:calc(100% - 25px);overflow-y:hidden;padding:5px 0 0 0;-webkit-scrollbar-track:none;}
+#world-map-legend li{list-style:none;margin:0px;padding:0px 0 0 10px;;height:30px;line-height:30px;clear:both;}
+#world-map-legend li .name{color:#FFF;float:left;width:70px;}
+#world-map-legend li .barWrapper{width:calc(100% - 70px);float:left;height:30px;}
+#world-map-legend li .barWrapper span{background: #9b9195;height:4px;display:block;margin-top:13px;}
+#world-map-legend li.active{background:rgba(255,255,255,0.05);border-radius:6px;}
+#world-map-legend li.active .barWrapper span{background:#e9ac6d;}

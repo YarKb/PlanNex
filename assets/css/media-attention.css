@@ -1,0 +1,11 @@
+.media-attention-row{height:60px;margin:25px 0 25px 0;width:100%;float:left;}
+.media-attention-row .item{}
+.media-attention-row .title{padding-right:30px;font-size:18px;}
+.media-attention-row .title span{background:rgba(255,255,255,0.2);color:#FFF;height:60px;display:block;line-height:60px;border-radius:50px;text-align:center;}
+.media-attention-row .volume{margin-right:10px;width:25px;height:100%;float:left;}
+.media-attention-row .volume div{height:6px;background:rgba(255,255,255,0.2);margin-top:4px;margin-bottom:4px;width:100%;border-radius:8px;}
+.media-attention-row .volume div.active{background:#e8ac6c;}
+.media-attention-row .name{font-size:14px;margin-bottom:5px;}
+.media-attention-row .percentage{color:#FFF;font-size:30px;height:30px;line-height:30px;}
+.media-attention-row .percentage span{font-size:14px;}
+#media-attention-graph .middle-row{font-size:!4px;margin-left:30px;margin-top:5px;margin-bottom:5px;}

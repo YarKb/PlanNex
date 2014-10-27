@@ -8648,6 +8648,7 @@ Tooltip.prototype = {
 		// When shared, use the average position
 		if (!ret) {
 			each(points, function (point) {
+				if(!point.series)return;
 				yAxis = point.series.yAxis;
 				plotX += point.plotX;
 				plotY += (point.plotLow ? (point.plotLow + point.plotHigh) / 2 : point.plotY) +

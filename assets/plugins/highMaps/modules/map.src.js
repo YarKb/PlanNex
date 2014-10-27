@@ -1038,6 +1038,8 @@ var MapAreaPoint = extendClass(Point, {
 	 * Stop the fade-out 
 	 */
 	onMouseOver: function (e) {
+		if(mapAreaMouseOver!=null)
+			mapAreaMouseOver(e,this);
 		clearTimeout(this.colorInterval);
 		if (this.value !== null) {
 			Point.prototype.onMouseOver.call(this, e);
