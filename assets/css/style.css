@@ -2495,7 +2495,7 @@ a.text-inverse:focus {
 
 .bg-purple { background: #727cb6 !important; }
 /*.bg-purple-darker { background: #45454e !important; }*/
-.bg-purple-darker { background: rgba(61,67,81,.95) !important; }
+.bg-purple-darker { background: rgba(61,67,81,.95) !important; filter: alpha(opacity=95); }
 .bg-purple-lighter { background: #8e96c5 !important; }
 
 

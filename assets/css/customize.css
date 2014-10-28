@@ -678,6 +678,7 @@
 	right: 0;
 	margin-left:auto;
 	margin-right: auto;  
+	z-index: 100;
 }
 .edit-form-popbox .edit-wrap h2{
 	color: #6f5f5c;
