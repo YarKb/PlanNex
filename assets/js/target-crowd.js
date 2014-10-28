@@ -54,6 +54,12 @@ var handleCrowdOp = function(){
     });
 
 };
+var handleTagRemove = function(){
+    $("#tags-list").find(".tag-remove").live("click", function(){
+        $(this).parent().remove();
+        adjustWidth();
+    });
+};
 var TargetCrowd = function () {
     "use strict";
     return {
@@ -62,6 +68,7 @@ var TargetCrowd = function () {
             adjustWidth();
             handleTagSlider();
             handleCrowdOp();
+            handleTagRemove();
         }
     };
 }();
