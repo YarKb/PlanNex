@@ -27,8 +27,11 @@
 	<!-- ================== END CUSOMIZE CSS STYLE ================== -->
 	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
 	<!-- <link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" /> -->
-	<!-- <link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
-	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" /> -->
+	<link href="assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+
+	<!-- <link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" /> -->
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
     <!-- <link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" /> -->
 	<!-- ================== END PAGE LEVEL STYLE ================== -->
 </head>
@@ -163,7 +166,7 @@
                                     <li data-click="download-img">保存当前图片</li>
                                     <li data-click="download-pdf">保存完整PDF</li>
                                 </ul>
-                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-edit"><i class="fa fa-pencil"></i></a>
                                 <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
 							</div>
 							<h4 class="panel-title">SOV分析</h4>
@@ -197,8 +200,8 @@
 					</div>
 				</div>
 				<!-- end col-8 -->
-				<!-- </div>
-				<div class="row"> -->
+				</div>
+				<div class="row">
 				<!-- begin col-4 -->
 				<div class="col-md-6 ">
 					
@@ -211,7 +214,7 @@
                                     <li data-click="download-img">保存当前图片</li>
                                     <li data-click="download-pdf">保存完整PDF</li>
                                 </ul>
-                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-edit"><i class="fa fa-pencil"></i></a>
 								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
 							</div>
 							<h4 class="panel-title">媒体曝光量排名</h4>
@@ -239,7 +242,7 @@
                                     <li data-click="download-img">保存当前图片</li>
                                     <li data-click="download-pdf">保存完整PDF</li>
                                 </ul>
-                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-edit"><i class="fa fa-pencil"></i></a>
 								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
 							</div>
 							<h4 class="panel-title">曝光地域分布</h4>
@@ -257,9 +260,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- </div> -->
+				</div>
 				<!-- end col-4 -->
-				<!-- <div class="row"> -->
+				<div class="row">
 				<!-- begin col-4 -->
 				<div class="col-md-6 ">
 					
@@ -272,7 +275,7 @@
                                     <li data-click="download-img">保存当前图片</li>
                                     <li data-click="download-pdf">保存完整PDF</li>
                                 </ul>
-                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-edit"><i class="fa fa-pencil"></i></a>
 								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
 							</div>
 							<h4 class="panel-title"><span class="icon"></span>媒体关注度</h4>
@@ -294,6 +297,33 @@
 				
 				</script>
 				<div class="col-md-6">
+					<div class="panel panel-inverse bgcolor withSubTitle">
+						<div class="panel-heading">
+							<div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="download-toggle"><i class="fa fa-download"></i></a>
+                                <ul class="btn-download hidden">
+                                    <li data-click="download-img">保存当前图片</li>
+                                    <li data-click="download-pdf">保存完整PDF</li>
+                                </ul>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-edit"><i class="fa fa-pencil"></i></a>
+								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+							</div>
+							<h4 class="panel-title">不同行业份额表</h4>
+							<div class="search-conditions"><label>时间范围</label><span>1-3月</span><label>地域</label><span>江苏－南京</span></div>
+						</div>
+						<div class="panel-body">
+							<div class="col-md-12" style="padding:0px;" data-chart>
+								<div id="market-share-table"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<!-- end col-4 -->
+				<!-- begin row -->
+			<div class="row">
+				<!-- begin col-8 -->
+				<div class="col-md-12">
 					<div class="panel panel-inverse bgcolor">
 						<div class="panel-heading">
 							<div class="panel-heading-btn">
@@ -302,44 +332,179 @@
                                     <li data-click="download-img">保存当前图片</li>
                                     <li data-click="download-pdf">保存完整PDF</li>
                                 </ul>
-                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-pencil"></i></a>
-								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-times"></i></a>
 							</div>
-							<h4 class="panel-title">曝光地域分布</h4>
+							<h4 class="panel-title"><span class="icon"></span>自有数据概览</h4>
+							<div class="search-conditions"><label>时间范围</label><span>1-3月</span><label>地域</label><span>江苏－南京</span></div>
 						</div>
 						<div class="panel-body">
-							<div id="world-map" class="height-sm col-md-9" style="padding:0px;" data-chart></div>
-							<div class="height-sm col-md-3" style="padding:0px;">
-								<div class="cTabs">
-									<a id="tab-prov">省份</a>
-									<a id="tab-city">城市</a>
-								</div>
-								<ul id="world-map-legend">
-								</ul>
-							</div>
+							<div id="exposureChart" class="col-md-6"></div>
+							<div id="activeChart" class="col-md-6"></div>
 						</div>
 					</div>
 				</div>
+				<!-- end col-8 -->
 				</div>
-				<!-- end col-4 -->
+			<div class="row">
+				<!-- begin col-8 -->
+				<div class="col-md-6">
+					<div class="panel panel-inverse bgcolor">
+						<div class="panel-heading">
+							<div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="download-toggle"><i class="fa fa-download"></i></a>
+                                <ul class="btn-download hidden">
+                                    <li data-click="download-img">保存当前图片</li>
+                                    <li data-click="download-pdf">保存完整PDF</li>
+                                </ul>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-times"></i></a>
+							</div>
+							<h4 class="panel-title"><span class="icon"></span>自有数据概览</h4>
+							<div class="search-conditions"><label>时间范围</label><span>1-3月</span><label>地域</label><span>江苏－南京</span></div>
+						</div>
+						<div class="panel-body">
+							<div id="oneColumnChart1" class="col-md-6"></div>
+							<div id="oneColumnChart2" class="col-md-6"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-inverse bgcolor">
+						<div class="panel-heading">
+							<div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="download-toggle"><i class="fa fa-download"></i></a>
+                                <ul class="btn-download hidden">
+                                    <li data-click="download-img">保存当前图片</li>
+                                    <li data-click="download-pdf">保存完整PDF</li>
+                                </ul>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-times"></i></a>
+							</div>
+							<h4 class="panel-title"><span class="icon"></span>自有数据概览</h4>
+							<div class="search-conditions"><label>时间范围</label><span>1-3月</span><label>地域</label><span>江苏－南京</span></div>
+						</div>
+						<div class="panel-body">
+							<div id="fourColumnChart1" class="col-md-6"></div>
+							<div id="fourColumnChart2" class="col-md-6"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end col-8 -->
+				</div>
+				<div class="row">
+				<!-- begin col-8 -->
+				<div class="col-md-12">
+					<div class="panel panel-inverse bgcolor">
+						<div class="panel-heading">
+							<div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="download-toggle"><i class="fa fa-download"></i></a>
+                                <ul class="btn-download hidden">
+                                    <li data-click="download-img">保存当前图片</li>
+                                    <li data-click="download-pdf">保存完整PDF</li>
+                                </ul>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click=""><i class="fa fa-times"></i></a>
+							</div>
+							<h4 class="panel-title"><span class="icon"></span>客户所在行业表现</h4>
+							<div class="search-conditions"><label>时间范围</label><span>1-3月</span><label>地域</label><span>江苏－南京</span></div>
+						</div>
+						<div class="panel-body">
+							<div id="performaceChartLong" class="col-md-12"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end col-8 -->
+				</div>
 			</div>
 			<!-- end row -->
+
 		</div>
 		<!-- end #content -->
-
-	</div>
-	<!-- end page container -->
-	<!-- <div class="confirm-wrap">
-		<div class="mask"></div>
-		<div class="confirm-box">
-			<h2>确定删除报表</h2>
-			<p>优酷SOV分析</p>
-			<div class="cfmbtns">
-				<a href="###" class="cancel">取消</a>
-				<a href="###" class="confirm">确认</a>
+		<!-- begin pop box -->
+		<div class="edit-form-popbox" id="edit-form-popbox">
+			<div class="mask"></div>
+			<div class="edit-wrap">
+				<h2>
+					<span>编辑报表信息</span>
+					<a href="#" class="icon-close icon-close-img">
+					</a>
+				</h2>
+				<dl>
+					<dt>报表名称</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt>时间范围</dt>
+					<dd>
+						<div class="input-group input-daterange">
+                            <input type="text" class="form-control" name="start" placeholder="开始时间" />
+                            <span class="input-group-addon">-</span>
+                            <input type="text" class="form-control" name="end" placeholder="结束时间" />
+                        </div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>地域</dt>
+					<dd>
+						<select class="selectpicker form-control" data-size="10" data-live-search="false">
+							<option>中国大陆</option>
+							<option>台湾</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>目标人群</dt>
+					<dd>
+						<select  class="selectpicker  form-control">
+							<option>男，25-29，本科及...</option>
+							<option>男，25-29，本科及...</option>
+							<option>男，25-29，本科及...</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>频次</dt>
+					<dd>
+						<select  class="selectpicker form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>媒体</dt>
+					<dd>
+						<select  class="selectpicker form-control">
+							<option>曼秀雷敦</option>
+							<option>优酷</option>
+							<option>曼秀雷敦</option>
+							<option>优酷</option>
+							<option>曼秀雷敦</option>
+							<option>优酷</option>
+							<option>曼秀雷敦</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>添加位置</dt>
+					<dd>
+						<label class="radio"><span class="radio-bg"></span><input type="radio" name="position"  /><span>Dashboard和数据中心</span> </label>
+						<label class="radio"><span class="radio-bg"></span><input type="radio" name="position" /><span>仅在数据中心</span> </label>
+					</dd>
+				</dl>
+				<div class="pop-cfm">
+					<a href="#" class="btn-cfm">确定</a>
+				</div>
 			</div>
 		</div>
-	</div> -->
+		<!-- end pop box -->
+	</div>
+	<!-- end page container -->
+	
 	<!-- ================== BEGIN BASE JS ================== -->
 	<script src="assets/plugins/jquery-1.8.2/jquery-1.8.2.min.js"></script>
 	<script src="assets/plugins/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
@@ -364,7 +529,10 @@
 	<script src="assets/plugins/highMaps/map-cn-all.js"></script>
 	<script src="assets/js/map.js"></script>
 	<script src="assets/js/media-attention.js"></script>
-	<!-- // <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script> -->
+	<script src="assets/js/column.js"></script>
+	<script src="assets/js/market-share.js"></script>
+	<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
 	<script src="assets/js/dashboard.js"></script>
     <script src="assets/js/apps.js"></script>
 	<!-- ================== END PAGE LEVEL JS ================== -->

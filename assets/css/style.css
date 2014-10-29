@@ -896,7 +896,7 @@ legend {
 }
 .dropdown-menu > li > a:hover, 
 .dropdown-menu > li > a:focus {
-    background: #edf0f5;
+    background: #f1f1f1;
 }
 .dropdown-menu > .active > a, 
 .dropdown-menu > .active > a:hover, 
@@ -1403,7 +1403,7 @@ position: relative;width:20px;height:20px;background: url(../img/icons/headIcon0
 
 /* 3.14.1 Component - Button - Default */
 
-.btn.btn-default {
+/*.btn.btn-default {
     color: #fff;
     background: #b6c2c9;
     border-color: #b6c2c9;
@@ -1415,7 +1415,7 @@ position: relative;width:20px;height:20px;background: url(../img/icons/headIcon0
 .open .dropdown-toggle.btn-default {
     background: #929ba1;
     border-color: #929ba1;
-}
+}*/
 .btn-group .btn.btn-default:not(.active) + .btn.btn-default,
 .input-group-btn .btn.btn-default:not(.active) + .btn.btn-default {
     border-left-color: #929ba1;
@@ -2748,7 +2748,7 @@ a.text-inverse:focus {
 .open .dropdown-toggle.datepicker table tr td.active:hover, 
 .open .dropdown-toggle.datepicker table tr td.active.disabled, 
 .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
-    background: #348fe2 !important;
+    background: #e8ac6c !important;
     color: #fff !important;
 }
 .datepicker {

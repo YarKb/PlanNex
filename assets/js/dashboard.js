@@ -289,12 +289,36 @@ var handleDonutChartHigh = function(){
             endAngle:  (0.5 - 0.1) * 360 * 0.5 + 360 ,
 
         },
+        plotOptions:{
+            pie:{
+
+                borderColor:'transparent',
+                states:{
+                    hover:{
+                        enabled:true,
+                        borderColor:'transparent',
+                        size:100,
+                        innerRadius:93,
+                    },
+                }
+            }
+        },
 
         series: [{
-            name: 'pptv',
-            data: [10],
-            innerRadius: '80%',
+            data: [
+                {
+                    y:10,
+                    color:'#e9ac6d',
+
+                },
+                {
+                    y:90,
+                    color:'rgba(255,255,255,0.2)'
+                    
+                }],
+            //innerRadius: '80%',
             dataLabels: {
+                enabled:false,
                 y: -30,
                 format: '<div style="text-align:center"><span style="font-size:40px;color: #e8ac6c;">{y}</span>' +'<span style="font-size:14px;color:#fff">%</span></div>'
             }
@@ -399,6 +423,45 @@ var handleSideBarToggle = function(){
     });
 };
 
+
+
+var handleFormInfoPop = function(){
+    // 弹窗
+    $("[data-click=panel-edit]").on("click", function(){
+        $("#edit-form-popbox").show();
+    });
+    // 关闭弹窗
+    $("#edit-form-popbox").find(".icon-close").on("click", function(){
+        $("#edit-form-popbox").hide();
+    });
+    // 确认提交
+    $("#edit-form-popbox").find(".btn-cfm").on("click", function(){
+        $("#edit-form-popbox").hide();
+    });
+};
+
+var handleRadioBtn = function(){
+    $(".radio").find("input[type='radio']").on("change", function(){
+        $("input[type='radio']").each(function(){
+            if(this.checked){
+                $(this).parents(".radio").addClass("selected");
+            }else{
+                $(this).parents(".radio").removeClass("selected");
+            }
+        });
+        
+    });
+};
+var handleSelectpicker = function() {
+    $('.selectpicker').selectpicker('render');
+};
+var handleDatepicker = function() {
+    $('.input-daterange').datepicker({
+        todayHighlight: true,
+        format: 'yyyy/mm/dd'
+    });
+};
+
 var Dashboard = function () {
 	"use strict";
     return {
@@ -417,6 +480,10 @@ var Dashboard = function () {
             //handleVectorMapHigh();
             // handleDashboardDatepicker();
             handleSideBarToggle();
+            handleFormInfoPop();
+            handleRadioBtn();
+            handleSelectpicker();
+            handleDatepicker();
         }
     };
 }();

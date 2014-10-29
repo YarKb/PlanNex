@@ -40,9 +40,9 @@
 		width: 100px;
 
 	}
-	.open>.slimScrollDiv>.dropdown-menu{
+	/*.open>.slimScrollDiv>.dropdown-menu{
 		display: block;
-	}
+	}*/
 	</style>
 
 </head>
@@ -62,15 +62,21 @@
 				<!-- 频次 -->
 				<div class="col-md-2">
 					<div class="dd">
-						<input type="text" data-toggle="dropdown"  style="width:200px"/>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-							<li class="arrow"></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4</a></li>
-						</ul>
-
+						<!-- <input type="text" data-toggle="dropdown"  style="width:200px"/>
+						<div class="dropdown-menu">
+							<ul role="menu" class="dropdown-menu-inner" aria-labelledby="dropdownMenu1">
+								<li class="arrow"></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4</a></li>
+							</ul>
+						</div> -->
+						<select class="selectpicker">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
 					</div>
 				</div>
 				<!-- 多选，字母排序 -->
@@ -138,8 +144,10 @@
 		$(document).ready(function() {
 			App.init();
 			// Dashboard.init();
-			 $('.selectpicker').selectpicker('render');
-			 $(".dropdown-menu").slimscroll({height: '196'});
+			 $('.selectpicker').selectpicker({
+			      size: 5
+			  });
+			 // $(".dropdown-menu-inner").slimscroll({height: '194'});
 		});
 	</script>
 	<style type="text/css">

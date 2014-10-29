@@ -25,6 +25,15 @@ var handleRadioBtn = function(){
 		
 	});
 };
+var handleSelectpicker = function() {
+    $('.selectpicker').selectpicker('render');
+};
+var handleDatepicker = function() {
+    $('.input-daterange').datepicker({
+        todayHighlight: true,
+        format: 'yyyy/mm/dd'
+    });
+};
 var FormType = function () {
 	"use strict";
     return {
@@ -32,6 +41,8 @@ var FormType = function () {
         init: function () {
         	handleFormInfoPop();
         	handleRadioBtn();
+        	handleSelectpicker();
+        	handleDatepicker();
         }
     };
 }();

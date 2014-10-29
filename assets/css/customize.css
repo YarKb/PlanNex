@@ -725,10 +725,11 @@
 .edit-form-popbox .edit-wrap dl dd{
 	float: left;
 	margin-left: 27px;
+	width: 340px;
 }
 .edit-form-popbox .edit-wrap dl dd input[type="text"],
 .edit-form-popbox .edit-wrap dl dd select{
-	width: 340px;
+	width: 100%;
 	height: 38px;
 	font-size: 16px;
 	color: #000;
@@ -762,6 +763,7 @@
 	.edit-form-popbox .edit-wrap dl dd{
 		float: none;
 		margin-right: 27px;
+		width: auto;
 	}
 	.edit-form-popbox .edit-wrap dl dd input[type="text"], 
 	.edit-form-popbox .edit-wrap dl dd select{
@@ -906,4 +908,24 @@
 .confirm-wrap .confirm-box .cfmbtns .confirm:hover{
 	background-color: #f1f1f1;
 	text-decoration: none;
+}
+
+.bootstrap-select .btn{
+	border-radius: 0;
+	border-color: #eae7e7;
+}
+.bootstrap-select.btn-group .dropdown-menu li>a{
+	font-size: 16px;
+	color: #6f5f5c;
+}
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default.active, 
+.open>.dropdown-toggle.btn-default{
+	background-color: #fff;
+	border-color: #e8ac6c;
+}
+.input-daterange input{
+	border-radius: 0!important;
 }

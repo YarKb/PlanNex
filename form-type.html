@@ -26,9 +26,11 @@
     <link rel="stylesheet" type="text/css" href="assets/plugins/fontello/css/fontello.css" media="" />
 	<!-- ================== END CUSOMIZE CSS STYLE ================== -->
 	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+
 	<!-- <link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" /> -->
-	<!-- <link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
-	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" /> -->
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
     <!-- <link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" /> -->
 	<!-- ================== END PAGE LEVEL STYLE ================== -->
 </head>
@@ -421,15 +423,17 @@
 				<dl>
 					<dt>时间范围</dt>
 					<dd>
-						<select>
-							<option>2014/08/01 - 2014/09/01</option>
-						</select>
+						<div class="input-group input-daterange">
+                            <input type="text" class="form-control" name="start" placeholder="开始时间" />
+                            <span class="input-group-addon">-</span>
+                            <input type="text" class="form-control" name="end" placeholder="结束时间" />
+                        </div>
 					</dd>
 				</dl>
 				<dl>
 					<dt>地域</dt>
 					<dd>
-						<select>
+						<select class="selectpicker form-control" data-size="10" data-live-search="false">
 							<option>中国大陆</option>
 							<option>台湾</option>
 						</select>
@@ -438,24 +442,36 @@
 				<dl>
 					<dt>目标人群</dt>
 					<dd>
-						<select>
-							<option>全部</option>
+						<select  class="selectpicker  form-control">
+							<option>男，25-29，本科及...</option>
+							<option>男，25-29，本科及...</option>
+							<option>男，25-29，本科及...</option>
 						</select>
 					</dd>
 				</dl>
 				<dl>
 					<dt>频次</dt>
 					<dd>
-						<select>
-							<option>全部</option>
+						<select  class="selectpicker form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
 						</select>
 					</dd>
 				</dl>
 				<dl>
 					<dt>媒体</dt>
 					<dd>
-						<select>
+						<select  class="selectpicker form-control">
+							<option>曼秀雷敦</option>
 							<option>优酷</option>
+							<option>曼秀雷敦</option>
+							<option>优酷</option>
+							<option>曼秀雷敦</option>
+							<option>优酷</option>
+							<option>曼秀雷敦</option>
 						</select>
 					</dd>
 				</dl>
@@ -490,8 +506,8 @@
 	
 	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
 	<!--<script src="assets/plugins/gritter/js/jquery.gritter.js"></script> -->
-	
-	<!-- // <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script> -->
+	<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
 	<script src="assets/js/form-type.js"></script>
     <script src="assets/js/apps.js"></script>
 	<!-- ================== END PAGE LEVEL JS ================== -->
