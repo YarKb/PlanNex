@@ -61,6 +61,18 @@ label {
     margin-left: 0;
     margin-right: 0;
 }
+/*.page-sidebar-fixed-off .sidebar .nav-header .fa-caret-down{
+    display: inline-block;
+}*/
+.page-sidebar-fixed .sidebar .nav-header .fa-caret-right{
+    display: none;
+}
+.page-sidebar-fixed-off .sidebar .nav-header .fa-caret-right{
+    display: inline-block;
+}
+.page-sidebar-fixed-off .sidebar .nav-header .fa-caret-down{
+    display: none;
+}
 .page-with-right-sidebar .footer {
     margin-left: 25px;
     margin-right: 245px;

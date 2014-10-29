@@ -132,6 +132,30 @@ var handlePageContentView = function() {
   });
 };
 
+/*helper function, confirm box*/
+var pConfirm = function(title, sub, callback){
+    var cfmBox = $('<div class="confirm-wrap">' + 
+                        '<div class="mask"></div>' + 
+                        '<div class="confirm-box">' + 
+                            '<h2></h2>' + 
+                            '<p></p>' + 
+                            '<div class="cfmbtns">' + 
+                                '<a href="###" class="cancel">取消</a>' + 
+                                '<a href="###" class="confirm">确认</a>' + 
+                            '</div>' + 
+                        '</div>' + 
+                    '</div>');
+    cfmBox.find("h2").html(title);
+    cfmBox.find("p").html(sub);
+    cfmBox.appendTo(document.body);
+    cfmBox.find(".cancel").on("click", function(){
+        cfmBox.remove();
+    });
+    cfmBox.find(".confirm").on("click", function(){
+        callback();
+        cfmBox.remove();
+    });
+}
 
 /* 06. Handle Panel - Remove / Reload / Collapse / Expand
 ------------------------------------------------ */
@@ -150,8 +174,13 @@ var handlePanelAction = function() {
     });
     $('[data-click=panel-remove]').click(function(e) {
         e.preventDefault();
-        $(this).tooltip('destroy');
-        $(this).closest('.panel').remove();
+        var _this = $(this);
+        var title= "确定删除报表？"
+        var sub = _this.parents(".panel-heading").find(".panel-title").html();
+        pConfirm(title, sub, function(){
+            _this.tooltip('destroy');
+            _this.closest('.panel').remove();
+        });       
     });
     
     // collapse

@@ -4,7 +4,7 @@
 		margin-top: 10px;
 	}
 }
-.navbar-right{
+.page-header-simple .navbar-right{
 	width: 136px;
 }
 .page-header-simple .page-header-fixed{
@@ -843,5 +843,67 @@
 .mobile-content .panel{
 	background-color: rgba(255, 255, 255, 0.03);
 }
-.mobile-content .panel-group .panel-heading+.panel-collapse>.panel-body{border-top: 0;}
-.mobile-content .form-list li{float: none; margin-right: 0; width: auto;}
+.mobile-content .panel-group .panel-heading+.panel-collapse>.panel-body{
+	border-top: 0;
+}
+.mobile-content .form-list li{
+	float: none; 
+	margin-right: 0; 
+	width: auto;
+}
+
+/*confirm box*/
+.confirm-wrap .mask{
+	position: fixed; 
+	left: 0; 
+	right: 0; 
+	top: 0; 
+	bottom: 0; 
+	background-color: rgba(0, 0, 0, 0.5); 
+	filter: alpha(opacity=50);
+	z-index: 1030;
+}
+.confirm-wrap .confirm-box{
+	color: #6f5f5c;
+	position: fixed;
+	left: 0;
+	right: 0; 
+	margin-right: auto;
+	margin-left: auto;
+	width: 270px;
+	height: 166px;
+	top: 50%;
+	margin-top: -83px;
+	z-index: 1040;
+	background-color: #fff;
+	text-align: center;
+}
+.confirm-wrap .confirm-box h2{
+	color: #6f5f5c;
+	font-size: 20px;
+	margin-top: 32px;
+	margin-bottom: 0;
+}
+.confirm-wrap .confirm-box p{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.confirm-wrap .confirm-box .cfmbtns{
+	margin-top: 22px;
+}
+.confirm-wrap .confirm-box .cfmbtns .cancel,
+.confirm-wrap .confirm-box .cfmbtns .confirm{
+	color: #6f5f5c;
+	display: inline-block;
+	width: 90px;
+	height: 36px;
+	line-height: 32px;
+	border: 2px solid #f1f1f1;
+	border-radius: 18px;
+	margin: 0 15px;
+}
+.confirm-wrap .confirm-box .cfmbtns .cancel:hover,
+.confirm-wrap .confirm-box .cfmbtns .confirm:hover{
+	background-color: #f1f1f1;
+	text-decoration: none;
+}

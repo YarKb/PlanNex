@@ -5,7 +5,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>PlaNex | Dashboard</title>
+	<title>PlaNex | POPS-DEMO</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -34,10 +34,14 @@
 	<!-- style only for this single page for demonstration purpose -->
 	<style type="text/css">
 	.dd{
-		width: 
+		position: relative;
 	}
 	select{
 		width: 100px;
+
+	}
+	.open>.slimScrollDiv>.dropdown-menu{
+		display: block;
 	}
 	</style>
 
@@ -56,22 +60,32 @@
 			<!-- begin row -->
 			<div class="row">
 				<!-- 频次 -->
-				<div class="col-md-1">
+				<div class="col-md-2">
 					<div class="dd">
-						<select class="selectpicker" data-style="btn-white" >
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-							<option>6</option>
-							<option>7</option>
-						</select>
+						<input type="text" data-toggle="dropdown"  style="width:200px"/>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li class="arrow"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4</a></li>
+						</ul>
+
 					</div>
 				</div>
 				<!-- 多选，字母排序 -->
 				<div class="col-md-2">
-					
+					<div class="dd">
+						<input type="text" data-toggle="dropdown"  style="width:200px"/>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li class="arrow"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4</a></li>
+						</ul>
+
+					</div>
 				</div>
 				<!-- 单选，字母排序 -->
 				<div class="col-md-2">
@@ -110,7 +124,7 @@
 		<script src="assets/crossbrowserjs/respond.min.js"></script>
 		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
 	<![endif]-->
-	<!-- // <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script> -->
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 	<!-- // <script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script> -->
 	<!-- ================== END BASE JS ================== -->
 	
@@ -125,6 +139,7 @@
 			App.init();
 			// Dashboard.init();
 			 $('.selectpicker').selectpicker('render');
+			 $(".dropdown-menu").slimscroll({height: '196'});
 		});
 	</script>
 	<style type="text/css">
